@@ -2,6 +2,7 @@ package com.edu.demo.case1.controller;
 
 import com.edu.demo.model.ResultVo;
 import com.edu.demo.util.ResultVoUtil;
+import org.springframework.context.annotation.Scope;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -16,6 +17,7 @@ import javax.servlet.http.HttpServletResponse;
  **/
 @RestController
 @RequestMapping("api")
+@Scope("request")
 public class ApiController {
 
     @GetMapping("common")
