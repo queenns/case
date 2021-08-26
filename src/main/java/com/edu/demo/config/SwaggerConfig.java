@@ -25,7 +25,7 @@ public class SwaggerConfig {
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.edu.demo.case2.controller"))
+                .apis(RequestHandlerSelectors.basePackage("com.edu.demo"))
                 .paths(PathSelectors.any())
                 .build();
     }
@@ -33,7 +33,7 @@ public class SwaggerConfig {
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
                 .title("API服务")
-                .description("估价接口CASE")
+                .description("CASE")
                 .version("1.0")
                 .build();
     }
